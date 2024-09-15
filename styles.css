@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* 基础字体大小，所有的rem值将基于此 */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  min-width: 320px; /* 页面最小宽度，确保在极小屏幕上保持可读性 */
+}
+
+/* 顶部导航栏样式 */
+.navbar {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+.navbar nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar nav ul li {
+  margin: 0 1.5rem;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+
+.navbar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 个人简介部分样式 */
+.intro-section {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  max-width: 75rem; /* 1200px => 75rem */
+  background-color: #fff; /* 卡片背景色 */
+  padding: 2rem; /* 卡片内边距 */
+  border-radius: 1rem; /* 边角圆滑 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  margin-bottom: 2rem; /* 卡片与下方内容的间距 */
+  min-width: 300px; /* 设置最小宽度，避免过小布局 */
+  flex-wrap: wrap; /* 当宽度不足时内容会自动换行 */
+}
+
+/* 轮播图样式 */
+.carousel {
+  width: 45%; /* 设置初始宽度为45% */
+  max-width: 25rem; /* 固定最大宽度 */
+  position: relative;
+  min-width: 10rem; /* 设置轮播图最小宽度，确保图像不会过小 */
+}
+
+/* 确保图片保持相同的宽高比 */
+.carousel-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; /* 固定宽高比为 4:3 */
+  object-fit: cover; /* 确保图片适应容器，裁剪超出部分 */
+  border-radius: 0.5rem; /* 8px => 0.5rem */
+}
+
+/* 信息栏样式 */
+.info-panel {
+  width: 50%;
+  max-width: 35rem; /* 560px => 35rem */
+  padding-left: 3rem;
+  min-width: 15rem; /* 设置最小宽度，确保信息栏不会过小 */
+}
+
+.chinese-name {
+  font-size: 2.5rem; /* 32px => 2rem */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.english-name {
+  font-size: 1.5rem; /* 24px => 1.5rem */
+  color: #666;
+  margin-top: 0.5rem; /* 10px => 0.5rem */
+  margin-bottom: 1rem;
+}
+
+.school, .email, .phone {
+  font-size: 1.125rem; /* 18px => 1.125rem */
+  margin-top: 0.5rem;
+}
+
+/* 文字介绍部分样式 */
+.bio {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 75rem;
+  text-align: left;
+}
+
+.bio h3 {
+  font-size: 1.625rem; /* 26px => 1.625rem */
+  margin-bottom: 0.625rem; /* 10px => 0.625rem */
+  color: #333;
+}
+
+.bio p {
+  font-size: 1.125rem; /* 18px => 1.125rem */
+  line-height: 1.6;
+  color: #555;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .intro-container {
+    flex-direction: row;
+    width: 90%; /* 增加宽度以更好适应中等屏幕 */
+  }
+
+  .carousel {
+    width: 40%; /* 调整轮播图的比例 */
+  }
+
+  .info-panel {
+    width: 55%; /* 调整信息栏的比例 */
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* 在小屏幕上扩展到100% */
+  }
+
+  .info-panel {
+    padding-left: 0;
+    text-align: center;
+    max-width: 100%;
+    min-width: unset; /* 移除最小宽度限制，确保内容能够适应屏幕 */
+  }
+
+  .carousel {
+    max-width: 100%;
+    min-width: unset; /* 移除轮播图最小宽度限制，确保适应屏幕 */
+  }
+}
