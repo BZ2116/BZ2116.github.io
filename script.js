@@ -14,6 +14,6 @@ function nextImage() {
     showImage(currentIndex);
 }
 
-setInterval(nextImage, 5000); // 每3秒切换一次图片
+setInterval(nextImage, 10000); // 每10秒切换一次图片
 
 showImage(currentIndex);

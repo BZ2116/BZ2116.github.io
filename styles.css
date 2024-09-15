@@ -109,7 +109,7 @@ body {
 /* 文字介绍部分样式 */
 .bio {
   margin-top: 2rem;
-  width: 90%;
+  width: 75%;
   max-width: 75rem;
   text-align: left;
 }
@@ -126,39 +126,43 @@ body {
   color: #555;
 }
 
-/* 响应式设计 */
-@media (max-width: 1024px) {
-  .intro-container {
-    flex-direction: row;
-    width: 90%; /* 增加宽度以更好适应中等屏幕 */
-  }
-
-  .carousel {
-    width: 40%; /* 调整轮播图的比例 */
-  }
-
-  .info-panel {
-    width: 55%; /* 调整信息栏的比例 */
-    padding-left: 2rem;
-  }
-}
-
 @media (max-width: 768px) {
   .intro-container {
     flex-direction: column;
     align-items: center;
-    width: 100%; /* 在小屏幕上扩展到100% */
+    width: 100%;
   }
 
   .info-panel {
     padding-left: 0;
     text-align: center;
     max-width: 100%;
-    min-width: unset; /* 移除最小宽度限制，确保内容能够适应屏幕 */
+    min-width: unset;
   }
 
   .carousel {
     max-width: 100%;
-    min-width: unset; /* 移除轮播图最小宽度限制，确保适应屏幕 */
+    min-width: unset;
+  }
+
+  .bio {
+    width: 90%;
+    text-align: center;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+  /* 确保图片在移动设备上按比例缩放 */
+  .carousel-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
