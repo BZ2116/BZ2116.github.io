@@ -46,6 +46,15 @@ function startCarousel() {
   carouselInterval = setInterval(nextImage, 10000);
 }
 
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled'); // 添加滚动状态的类
+  } else {
+    navbar.classList.remove('scrolled'); // 移除滚动状态的类
+  }
+});
+
 // 初始化轮播图
 showImage(currentIndex);
 startCarousel();
