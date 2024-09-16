@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 网页基本信息 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="src\img\icon\BZ_logo.png">
     <title>Bruce Zhao</title>
-    <link rel="stylesheet" href="src\css\mainStyle.css">
+    <!-- 引入CSS样式表 -->
+    <link rel="stylesheet" href="src/css/mainStyle.css">
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="src/img/icon/BZ_logo.png">
 </head>
 <body>
     <!-- 顶部导航栏 -->
     <header class="navbar">
         <nav>
-            <ul>
-                <li><a href="#about">个人简介</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#contact">联系方式</a></li>
-            </ul>
+            <div class="nav-container">
+                <!-- 左侧LOGO -->
+                <a href="#" class="logo">
+                    <img src="src/img/icon/BZ_logo.png" alt="Logo">
+                </a>
+                <!-- 移动端菜单图标 -->
+                <div class="mobile-menu-icon">
+                    <span>☰</span>
+                </div>
+                <!-- 右侧导航菜单 -->
+                <ul class="nav-menu">
+                    <li><a href="#about">个人简介</a></li>
+                    <li><a href="#projects">项目</a></li>
+                    <li><a href="#contact">联系方式</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -24,15 +38,15 @@
         <div class="intro-container">
             <!-- 左边轮播图 -->
             <div class="carousel">
-                <img src="src\img\BZ\BZ1.jpg" alt="Image 1" class="carousel-img">
-                <img src="src\img\BZ\BZ2.jpg" alt="Image 2" class="carousel-img">
-                <img src="src\img\BZ\BZ3.jpg" alt="Image 3" class="carousel-img">
+                <img src="src/img/BZ/BZ1.jpg" alt="Image 1" class="carousel-img">
+                <img src="src/img/BZ/BZ2.jpg" alt="Image 2" class="carousel-img">
+                <img src="src/img/BZ/BZ3.jpg" alt="Image 3" class="carousel-img">
             </div>
             <!-- 右边信息栏 -->
             <div class="info-panel">
                 <h1 class="chinese-name">赵耀</h1>
                 <h2 class="english-name">Bruce Zhao</h2>
-                <h3 class='hometown'>四川省成都市</h3>
+                <h3 class="hometown">四川省成都市</h3>
                 <p class="school">重庆邮电大学：软件工程学院（2022-2026）</p>
                 <p class="email"><strong>邮箱：</strong>bzy1621@outlook.com</p>
                 <p class="phone"><strong>电话：</strong>(+86) 13548240116</p>
@@ -49,6 +63,16 @@
         </div>
     </section>
 
-    <script src="src\js\main.js"></script>
+    <!-- 其他部分（项目、联系方式等） -->
+    <section id="projects">
+        <!-- 项目内容 -->
+    </section>
+
+    <section id="contact">
+        <!-- 联系方式内容 -->
+    </section>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="src/js/main.js"></script>
 </body>
 </html>

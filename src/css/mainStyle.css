@@ -1,75 +1,90 @@
+/* 全局样式重置 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   user-select: none;
-  text-decoration: none; /* 去掉下划线 */
+  text-decoration: none;
 }
 
 html {
-  font-size: 16px; /* 基础字体大小，所有的rem值将基于此 */
+  font-size: 16px;
 }
+
 @font-face {
   font-family: 'LXGWWenKai';
   src: url('../font/LXGWWenKai-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 body {
-  font-family: 'LXGWWenKai';
-  background-color: #f9f9f9;
+  font-family: 'LXGWWenKai', sans-serif;
+  background: linear-gradient(135deg, #ffffff 0%, #bce8fc 100%);
   color: #333;
-  min-width: 320px; /* 页面最小宽度，确保在极小屏幕上保持可读性 */
-
-  background: linear-gradient(135deg, #89CFF0 0%, #1E90FF 100%);
+  min-width: 320px;
 }
-
-
-
-
 
 /* 顶部导航栏样式 */
 .navbar {
-  background-color: transparent; /* 设置为透明背景 */
-  padding: 1rem 0;
+  background-color: transparent;
+  padding: 1rem 2rem;
   position: relative;
-  z-index: 1000; /* 确保导航栏在背景图之上 */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* 添加轻微阴影效果 */
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar nav ul {
+.navbar .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+/* 移动端菜单图标样式 */
+.navbar .mobile-menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* 导航菜单样式 */
+.navbar .nav-menu {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
-.navbar nav ul li {
-  margin: 0 1.5rem;
+.navbar .nav-menu li {
+  margin: 0 1rem;
 }
 
-.navbar nav ul li a {
-  color: white; /* 保持文字颜色为白色 */
+.navbar .nav-menu li a {
+  color: #333;
   text-decoration: none;
   font-size: 1.125rem;
-  font-weight: bold; /* 使文字更清晰 */
-  padding: 0.5rem 1rem; /* 添加内边距以增加点击区域 */
-  border-radius: 0.5rem; /* 添加边角圆滑 */
-  transition: background-color 0.3s ease, color 0.3s ease; /* 平滑过渡效果 */
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 
 /* 悬停时的样式 */
-.navbar nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* 背景变为半透明白色 */
-  color: #fff; /* 保持文字为白色 */
+.navbar .nav-menu li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000;
 }
 
-/* 选中/点击时的样式 */
-.navbar nav ul li a:active,
-.navbar nav ul li a:focus {
-  background-color: rgba(255, 255, 255, 0.4); /* 更强的半透明背景色 */
-  color: #fff; /* 保持文字颜色 */
-  outline: none; /* 移除默认的焦点边框 */
+.navbar .nav-menu li a:active,
+.navbar .nav-menu li a:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+  outline: none;
 }
 
 /* 个人简介部分样式 */
@@ -84,57 +99,56 @@ body {
   display: flex;
   justify-content: space-between;
   width: 65%;
-  max-width: 75rem; /* 1200px => 75rem */
-  background-color: #fff; /* 卡片背景色 */
-  padding: 2rem; /* 卡片内边距 */
-  border-radius: 1rem; /* 边角圆滑 */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 阴影效果 */
-  margin-bottom: 2rem; /* 卡片与下方内容的间距 */
-  min-width: 300px; /* 设置最小宽度，避免过小布局 */
-  flex-wrap: wrap; /* 当宽度不足时内容会自动换行 */
+  max-width: 75rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  min-width: 300px;
+  flex-wrap: wrap;
 }
 
 /* 轮播图样式 */
 .carousel {
-  width: 45%; /* 设置初始宽度为45% */
-  max-width: 25rem; /* 固定最大宽度 */
+  width: 45%;
+  max-width: 25rem;
   position: relative;
-  min-width: 10rem; /* 设置轮播图最小宽度，确保图像不会过小 */
+  min-width: 10rem;
 }
 
-/* 确保图片保持相同的宽高比 */
 .carousel-img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3; /* 固定宽高比为 4:3 */
-  object-fit: cover; /* 确保图片适应容器，裁剪超出部分 */
-  border-radius: 1rem; /* 8px => 0.5rem */
-  box-shadow: 0 4px 8px rgba(0, 0, 0.2, 0.6); /* 添加阴影 */
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 信息栏样式 */
 .info-panel {
   width: 50%;
-  max-width: 35rem; /* 560px => 35rem */
+  max-width: 35rem;
   padding-left: 3rem;
-  min-width: 15rem; /* 设置最小宽度，确保信息栏不会过小 */
+  min-width: 15rem;
 }
 
 .chinese-name {
-  font-size: 2.5rem; /* 32px => 2rem */
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .english-name {
-  font-size: 1.5rem; /* 24px => 1.5rem */
+  font-size: 1.5rem;
   color: #666;
-  margin-top: 0.5rem; /* 10px => 0.5rem */
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .school, .email, .phone {
-  font-size: 1.125rem; /* 18px => 1.125rem */
+  font-size: 1.125rem;
   margin-top: 0.5rem;
 }
 
@@ -147,18 +161,52 @@ body {
 }
 
 .bio h3 {
-  font-size: 1.625rem; /* 26px => 1.625rem */
-  margin-bottom: 0.625rem; /* 10px => 0.625rem */
+  font-size: 1.625rem;
+  margin-bottom: 0.625rem;
   color: #333;
 }
 
 .bio p {
-  font-size: 1.125rem; /* 18px => 1.125rem */
+  font-size: 1.125rem;
   line-height: 1.6;
   color: #555;
 }
 
+/* 响应式布局 */
 @media (max-width: 768px) {
+  .navbar .nav-container {
+    justify-content: space-between;
+  }
+
+  .navbar .mobile-menu-icon {
+    display: block;
+  }
+
+  .navbar .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .navbar .nav-menu.active {
+    display: flex;
+  }
+
+  .navbar .nav-menu li {
+    margin: 0;
+  }
+
+  .navbar .nav-menu li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+  }
+
   .intro-container {
     flex-direction: column;
     align-items: center;
@@ -182,22 +230,13 @@ body {
   .info-panel {
     padding-left: 0;
     text-align: left;
-    max-width: 95%; /* 将最大宽度增加到95% */
-    width: 95%;     /* 设置宽度为95% */
+    max-width: 95%;
+    width: 95%;
     min-width: unset;
   }
 
   .bio {
-    width: 95%; /* 调整个人介绍部分的宽度 */
+    width: 95%;
     text-align: left;
-  }
-
-  .navbar nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar nav ul li {
-    margin: 0.5rem 0;
   }
 }
