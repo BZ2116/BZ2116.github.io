@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/BZ2116/BZ2116.github.io/tree/gh-pages/selfpage/static/css/main.e63868d5.css",
-    "main.js": "/BZ2116/BZ2116.github.io/tree/gh-pages/selfpage/static/js/main.f184907c.js",
-    "static/media/LXGWWenKai-Regular.ttf": "/BZ2116/BZ2116.github.io/tree/gh-pages/selfpage/static/media/LXGWWenKai-Regular.4be1b20bbe1613948cd5.ttf",
-    "static/media/BZ11.jpg": "/BZ2116/BZ2116.github.io/tree/gh-pages/selfpage/static/media/BZ11.f7606226adaffffe4af4.jpg",
-    "static/media/BZ_logo.png": "/BZ2116/BZ2116.github.io/tree/gh-pages/selfpage/static/media/BZ_logo.124217309afa26dd861f.png",
-    "static/media/BZ2.jpg": "/BZ2116/BZ2116.github.io/tree/gh-pages/selfpage/static/media/BZ2.d926b24687132638679c.jpg",
-    "index.html": "/BZ2116/BZ2116.github.io/tree/gh-pages/selfpage/index.html",
-    "main.e63868d5.css.map": "/BZ2116/BZ2116.github.io/tree/gh-pages/selfpage/static/css/main.e63868d5.css.map",
-    "main.f184907c.js.map": "/BZ2116/BZ2116.github.io/tree/gh-pages/selfpage/static/js/main.f184907c.js.map"
+    "main.css": "/selfpage/static/css/main.96a37c39.css",
+    "main.js": "/selfpage/static/js/main.b15fb0eb.js",
+    "static/media/LXGWWenKai-Regular.ttf": "/selfpage/static/media/LXGWWenKai-Regular.4be1b20bbe1613948cd5.ttf",
+    "static/media/BZ11.jpg": "/selfpage/static/media/BZ11.f7606226adaffffe4af4.jpg",
+    "static/media/BZ_logo.png": "/selfpage/static/media/BZ_logo.124217309afa26dd861f.png",
+    "static/media/BZ2.jpg": "/selfpage/static/media/BZ2.d926b24687132638679c.jpg",
+    "index.html": "/selfpage/index.html",
+    "main.96a37c39.css.map": "/selfpage/static/css/main.96a37c39.css.map",
+    "main.b15fb0eb.js.map": "/selfpage/static/js/main.b15fb0eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.e63868d5.css",
-    "static/js/main.f184907c.js"
+    "static/css/main.96a37c39.css",
+    "static/js/main.b15fb0eb.js"
   ]
 }
