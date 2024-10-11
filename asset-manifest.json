@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/BZ2116/BZ2116.github.io/static/css/main.d012c721.css",
-    "main.js": "/BZ2116/BZ2116.github.io/static/js/main.44efc2d4.js",
-    "static/media/LXGWWenKai-Regular.ttf": "/BZ2116/BZ2116.github.io/static/media/LXGWWenKai-Regular.4be1b20bbe1613948cd5.ttf",
-    "static/media/BZ11.jpg": "/BZ2116/BZ2116.github.io/static/media/BZ11.f7606226adaffffe4af4.jpg",
-    "static/media/BZ3.jpg": "/BZ2116/BZ2116.github.io/static/media/BZ3.51330a09549959717987.jpg",
-    "static/media/BZ_logo.png": "/BZ2116/BZ2116.github.io/static/media/BZ_logo.124217309afa26dd861f.png",
-    "static/media/BZ2.jpg": "/BZ2116/BZ2116.github.io/static/media/BZ2.d926b24687132638679c.jpg",
-    "index.html": "/BZ2116/BZ2116.github.io/index.html",
-    "main.d012c721.css.map": "/BZ2116/BZ2116.github.io/static/css/main.d012c721.css.map",
-    "main.44efc2d4.js.map": "/BZ2116/BZ2116.github.io/static/js/main.44efc2d4.js.map"
+    "main.css": "/selfpage/static/css/main.96a37c39.css",
+    "main.js": "/selfpage/static/js/main.f6b82771.js",
+    "static/media/LXGWWenKai-Regular.ttf": "/selfpage/static/media/LXGWWenKai-Regular.4be1b20bbe1613948cd5.ttf",
+    "static/media/BZ11.jpg": "/selfpage/static/media/BZ11.f7606226adaffffe4af4.jpg",
+    "static/media/BZ3.jpg": "/selfpage/static/media/BZ3.51330a09549959717987.jpg",
+    "static/media/BZ_logo.png": "/selfpage/static/media/BZ_logo.124217309afa26dd861f.png",
+    "static/media/BZ2.jpg": "/selfpage/static/media/BZ2.d926b24687132638679c.jpg",
+    "index.html": "/selfpage/index.html",
+    "main.96a37c39.css.map": "/selfpage/static/css/main.96a37c39.css.map",
+    "main.f6b82771.js.map": "/selfpage/static/js/main.f6b82771.js.map"
   },
   "entrypoints": [
-    "static/css/main.d012c721.css",
-    "static/js/main.44efc2d4.js"
+    "static/css/main.96a37c39.css",
+    "static/js/main.f6b82771.js"
   ]
 }
